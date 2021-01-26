@@ -1,0 +1,22 @@
+{
+  "name": "@esoto/lib-builder-utils",
+  "version": "0.0.0",
+  "description": "esoto library builder javascript utilities and tools",
+  "author": "Eric Sotomayor <elpasocolorartist@yahoo.com>",
+  "license": "ISC",
+  "private": true,
+  "keywords": [
+    "@esoto/lib-builder-utils",
+    "esoto-lib-builder-utils",
+    "lib-builder-utils"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoto76/esoto.git",
+    "directory": "packages/lib-builder-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/esoto76/esoto/issues"
+  },
+  "homepage": "https://github.com/esoto76/esoto/tree/main/packages/lib-builder-utils#readme"
+}

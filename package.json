@@ -5,17 +5,20 @@
   "author": "Eric Sotomayor <elpasocolorartist@yahoo.com>",
   "license": "ISC",
   "private": true,
-  "devDependencies": {
-    "@types/node": "^14.14.22",
-    "ts-lib": "^0.0.5",
-    "typescript": "^4.1.3"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [
     "@esoto",
     "esoto",
     "@esoto/packages",
     "esoto-packages"
   ],
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "ts-lib": "^0.0.5",
+    "typescript": "^4.1.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/esoto76/esoto.git"
