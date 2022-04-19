@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "noEmitOnError": true,
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "removeComments": true,
+    "jsx": "preserve",
+    "noFallthroughCasesInSwitch": true,
+    "lib": ["dom", "dom.iterable", "esnext", "ES6"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": false,
+    "useDefineForClassFields": false,
+    "noUnusedLocals": true
+  },
+  "include": ["./packages/**/*/src/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "scripts/**/*.js",
+    "**/node_modules",
+    "**/*/dist",
+    "**/scripts/**/*.js",
+    "**/*/rollup.config.js"
+  ]
+}
