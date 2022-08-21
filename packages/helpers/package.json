@@ -1,0 +1,40 @@
+{
+  "name": "@esoto/helpers",
+  "version": "0.0.1-alpha.1",
+  "description": "esoto helpers utilities",
+  "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
+  "license": "ISC",
+  "main": "./dist/esoto-helpers.cjs.js",
+  "module": "./dist/esoto-helpers.es.js",
+  "typings": "./dist/esoto-helpers.d.js",
+  "files": [
+    "./dist/**/*",
+    "dist/**/*.js",
+    "dist/*.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/esoto-helpers.cjs.js",
+      "import": "./dist/esoto-helpers.es.js",
+      "types": "./dist/esoto-helpers.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -cw"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.9",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoto76/esoto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esoto76/esoto/issues"
+  },
+  "homepage": "https://github.com/esoto76/esoto/tree/main/packages/helpers#readme"
+}
