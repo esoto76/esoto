@@ -1,3 +1,3 @@
-declare module "path" {
-  export var sep: string;
-}
+declare module "path";
+
+declare module "fs";
