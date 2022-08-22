@@ -157,8 +157,25 @@ const GetInputPaths = async (dir = buildDir, file = entryName) => {
   }
 };
 
+const SetInput = async (dir = buildDir, file = entryName) => {
+  try {
+    const inputs = await GetInputPaths(dir, file);
+
+    for (let p of inputs) {
+      let k = p.replace(`${dir}/`, "").replace(`/${file}`, "");
+      input[k === file ? main : k] = p;
+    }
+
+    return input;
+  } catch (e) {
+    console.error(e);
+  }
+};
+
 export default async () => {
   try {
+    await SetInput();
+    console.dir(input);
     const configs = {
       input,
       output: GetOutput(),

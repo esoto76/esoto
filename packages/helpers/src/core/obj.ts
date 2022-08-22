@@ -1,9 +1,9 @@
-import { IsDef } from './misc';
-import { IsArr, IsArrDef } from './arr';
-import { ISFN, GEN_OBJ } from './types';
+import { IsDef } from "./misc";
+import { IsArr, IsArrDef } from "./arr";
+import { ISFN, GEN_OBJ } from "./types";
 
 export const IsObj: ISFN = v =>
-  IsDef(v) && !IsArr(v) && typeof v === 'object' ? true : false;
+  IsDef(v) && !IsArr(v) && typeof v === "object" ? true : false;
 
 export const OKeys: (v: any) => string[] = v =>
   IsObj(v) ? Object.keys(v) : [];

@@ -10,13 +10,24 @@
   "files": [
     "./dist/**/*",
     "dist/**/*.js",
-    "dist/*.d.ts"
+    "dist/*.d.ts",
+    "./dist/scripts/**/*"
   ],
   "exports": {
     ".": {
       "require": "./dist/esoto-helpers.cjs.js",
       "import": "./dist/esoto-helpers.es.js",
       "types": "./dist/esoto-helpers.d.ts"
+    },
+    "./core": {
+      "require": "./dist/shared/core.cjs.js",
+      "import": "./dist/shared/core.es.js",
+      "types": "./dist/shared/core.d.ts"
+    },
+    "./node": {
+      "require": "./dist/shared/core.cjs.js",
+      "import": "./dist/shared/node.es.js",
+      "types": "./dist/shared/node.d.ts"
     }
   },
   "scripts": {
