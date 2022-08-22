@@ -111,10 +111,7 @@ const plugins = [
     transpiler: { typescriptSyntax: "typescript", otherSyntax: "babel" },
     browserslist: false,
     babelConfig: {
-      plugins: [
-        "@babel/plugin-transform-spread",
-        "@babel/plugin-transform-arrow-functions",
-      ],
+      plugins: ["@babel/plugin-transform-arrow-functions"],
     },
     tsconfig: "tsconfig.json",
     hook: {
