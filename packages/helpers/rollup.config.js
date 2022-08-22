@@ -175,7 +175,6 @@ const SetInput = async (dir = buildDir, file = entryName) => {
 export default async () => {
   try {
     await SetInput();
-    console.dir(input);
     const configs = {
       input,
       output: GetOutput(),
