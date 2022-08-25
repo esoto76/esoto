@@ -1,5 +1,6 @@
 import { ISFN } from "./types";
 import { IsDef, IsLength } from "./misc";
+import { IsStrDef } from "./string";
 
 export const IsArr: ISFN = v => (IsDef(v) && Array.isArray(v) ? true : false);
 
@@ -14,3 +15,6 @@ export const ArrMerge: (x: any[], y: any[]) => any[] = (x, y) => {
 
   return x;
 };
+
+export const GetArrOfStrs: (v: any[]) => string[] = v =>
+  IsArrDef(v) ? v.filter(s => IsStrDef(s)) : [];
