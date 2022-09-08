@@ -20,7 +20,7 @@
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^14.0.1",
     "@rollup/plugin-replace": "^4.0.0",
     "rollup": "^2.79.0",
     "rollup-plugin-add-shebang": "^0.3.1",
@@ -31,7 +31,7 @@
     "typescript": "^4.8.2"
   },
   "devDependencies": {
-    "@types/node": "^18.7.15",
+    "@types/node": "^18.7.16",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
