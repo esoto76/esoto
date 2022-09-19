@@ -3,7 +3,7 @@
   "description": "esoto utilities and packages",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
-  "packageManager": "pnpm@7.11.0",
+  "packageManager": "pnpm@7.12.0",
   "private": true,
   "engines": {
     "node": ">=10",
